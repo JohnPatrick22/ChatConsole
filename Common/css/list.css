@@ -1,0 +1,172 @@
+.contentList {
+	position: relative;
+	height: 100%;
+	width: 360px;
+	border-radius: 1em;
+	/* background-color: rgb(207, 207, 207); */
+	overflow: hidden;
+}
+
+.index {
+	min-height: 250px;
+	position: absolute;
+	right: 0px;
+	z-index: 1000;
+	border-radius: 0.8em 0.8em 0.8em 0.8em;
+}
+
+.index:hover {
+	background-color: rgba(87, 87, 87, 0.3);
+}
+
+.index a {
+	display: block;
+	cursor: pointer;
+	color: rgb(37, 64, 97);
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 2px 4px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.indexSmaller a {
+	font-size: 10px;
+	line-height: 9px;
+}
+
+
+.index a:hover {
+	font-weight: bold; 
+}
+
+
+.list {
+	display: block;
+	height: 100%;
+	width: 400px;
+	position: absolute;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.list ul {
+	list-style: none;
+}
+
+.list-content {
+	display: block;
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: auto;
+}
+
+.list-content>ul {
+	height: 100%;
+}
+
+.list-content .title {
+	width: 100%;
+	float: left;
+	line-height: 12px;
+	padding: 3px 0; 
+	color: rgb(37, 64, 97);
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	text-indent: 10px;
+	text-transform: uppercase;
+	/* background-color: rgb(207, 207, 207); */
+}
+
+.list-content .title .-list-fakeheader {
+	width: 100%;
+}
+
+.list-content ul li {
+	float: left;
+	width: 340px;
+}
+
+.list-content ul ul li a {
+	display: block;
+	padding: 5px 10px;
+	color: rgb(13, 13, 13);
+	text-decoration: none;
+	text-transform: capitalize;
+	/* background-color: rgb(207, 207, 207); */
+	box-shadow: inset 0 0 10px rgb(13, 13, 13);
+	/* border-radius: 1em 1em 1em 1em; /* Added */
+	margin-bottom: 4px;
+	border-radius: 4px;
+}
+
+.list-content ul ul li a:hover {
+	background-color: rgb(231, 231, 231);
+}
+
+.list-content ul ul li:last-child {
+	border-bottom: 0;
+}
+
+.list-content ul ul li a>div {
+	display: table-cell;
+	height: 65px; 
+	width: 350px;
+	padding-left: 3px; 
+	padding-right: 20px;
+	padding-top: 5px; /* Added */
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: left center;
+	/* background-color: rgb(207, 207, 207); */
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.list-content ul ul li a>div>span {
+	width: 130px;
+	float: left;
+	text-align: left;
+	line-height: 26px;
+}
+
+.list-content ul ul li a>div>div {
+	display: inline-table;
+	float: right;
+	width: 120px;
+	height: 20px;
+	line-height: 26px;
+	color: rgb(255, 255, 012); 
+	border-style: solid;
+	border-color: rgb(13, 13, 13);
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	border: medium;
+	background-color: rgb(13, 13, 13);
+}
+
+.listSelected {
+	background-color: rgb(244, 244, 244);
+}
+
+div.itemDetail {
+	height: 36px;
+	margin-left: 20%;
+	margin-top: 5px;
+	vertical-align: middle;
+	text-align: center;
+	position: static;
+	background-color: rgb(37, 64, 97);
+	color: rgb(242, 242, 242);
+	border-radius: 1em;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+img.itemIcon {
+	width: 50px; height: 50px; border-radius: 45px;	
+}

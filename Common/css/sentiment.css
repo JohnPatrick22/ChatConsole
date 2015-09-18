@@ -1,0 +1,252 @@
+* { 
+    margin: 0px; padding: 0px; white-space: nowrap;
+}
+
+html { 
+    height: 100%; width: 100%; font-family : Calibri; font-size : 12pt; text-align: center; color: rgb(50, 54, 43);
+}
+
+body { 
+    height: 100%; width: 100%; cursor:default; background-color : white; overflow: hidden;
+}
+
+p {
+    white-space: normal; line-height: normal; font-family: calibri; font-size: 12px;
+}
+
+fieldset { 
+    display: block; width: 100%; border-radius: 4px; border: thin; border-style: solid; border-color: rgb(80, 86, 89); margin-top: 20px;
+}
+
+legend { 
+    padding-left: 14px; padding-right: 14px; border-radius: 2em; color: rgb(217, 217, 217); font-size: 16px; background-color: rgb(37, 64, 97); -webkit-box-shadow: inset 2px 2px rgb(27, 27, 27), 1px 1px 1px 1px rgb(255, 255, 255);
+}
+
+b {
+	word-wrap: inherit; white-space: inherit;	
+}
+
+frame.previewFrame {
+	width: 1024px; height: 768px; border: none; -webkit-transform: scale(0.2); -webkit-transform-origin: 0 0;
+}
+
+div.previewDiv {
+	display: none; position: relative; height: 142px; width: 256px; 	
+}
+
+span.noPreview {
+	font-family: Arial; color: rgb(80, 86,89);  
+}
+
+span.preview {
+	font-family: Arial; color: rgb(0, 0, 200);  
+}
+
+span.preview:hover {
+	font-weight: bold;
+}
+
+/**
+ *  Size of the Calendar
+ */
+div.ui-datepicker{ 
+    font-size: 60%; 
+	z-index: 10000 !important;
+}
+/*
+#ui-datepicker-div 
+{
+	z-index: 5;
+}
+*/
+
+
+div.table {
+    display: table; width: 100%; height: 100%;
+}
+
+div.row {
+    display: table-row; width: 100%; 
+}
+
+div.cell {
+    display: table-cell; width: 100%; vertical-align: middle;
+}
+
+div.caption {
+	display: table-caption;
+}
+
+div.horizontalCenter {
+    margin-left:auto; margin-right:auto;
+}
+
+div.verticalCenter {
+	display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center;
+}
+
+div.background {
+    border-radius: 2em 2em 2em 2em; background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.79) 24%, rgba(89, 89, 89, 0.79)) 100%, -webkit-linear-gradient(top, rgba(168, 175, 181, 0.5), rgba(168, 175, 181, 0.5)), url("../images/BackgroundMotif.png") 0 0 repeat;  
+}
+
+div.login {
+    width: 800px; height: 600px; border-radius: 2em 2em 2em 2em; background: -webkit-radial-gradient(center center, circle cover, rgba(220, 220, 220, .79) 0%, rgba(149, 149, 149, .79) 100%), -webkit-linear-gradient(top, rgba(168, 175, 181, 0.5), rgba(168, 175, 181, 0.5)), url("../images/BackgroundMotif.png") 0 0 repeat;                  
+}
+
+div.full {
+	width: 100%; height: 100%; 
+}
+
+div.header, div.footer {
+    height: 70px; padding-left: 10px; padding-right: 10px;
+}
+
+div.emailInputMessageContainer {
+	height: 100%;
+	 
+	cursor: auto;
+	
+	direction: ltr;
+	text-align: start;
+	outline-style: none;
+	outline-width: 0px;
+	
+	background-color: rgb(255, 255, 255);
+	
+	overflow-y: auto;
+
+	white-space: normal;
+	
+	font-size: 14px;
+}
+
+.textSize22px { 
+    font-size: 22px; 
+}
+
+.textSize20px { 
+    font-size: 20px; 
+}
+
+.textSize18px { 
+    font-size: 18px; 
+}
+
+.textSize14px { 
+    font-size: 14px; 
+}
+
+.textSize12px { 
+    font-size: 12px; 
+}
+
+.textColorWhite { 
+	color: rgb(244, 244, 244); 
+}       
+
+div.blockAccess  {
+ 	position: absolute; height: 100%; width: 100%; top: 0px; left: 0px; z-index: 100; background: -webkit-linear-gradient(top, rgba(255, 255, 255, .3) 24%, rgba(100, 100, 100, .3) 100%);  
+}
+
+div.loadingImage {
+	width: 100%; height: 100%; background-image: url("../images/waiting/waiting.gif"); background-position: center; background-repeat: no-repeat; background-size: 150px 150px;
+}
+
+div.tabContainer {
+	display: -webkit-box; -webkit-box-pack: center;	
+}
+
+div.sectionContainer {
+	height: 100%;
+}
+
+div.executiveContainer {
+	height: 100%; background-color: rgba(200, 200, 200, 0.5); border-radius: 10px;
+}
+
+div.chartLeft {
+    width: 50%; height: 100%; float: left; 
+}
+
+div.chartRight {
+    width: 50%; height: 100%; float: right; 
+}
+
+div.trendingRow {
+	height: 30px;
+}
+
+div.trendingTitle {
+	font-weight: Bold; font-size: 24px; padding-bottom: 10px;
+}
+
+div.trendingName {
+	width: 47%; float: left; padding-bottom: 6px; text-align: right;
+}
+
+div.trendingCount {
+	width: 47%; float: right; padding-bottom: 6px; text-align: left;
+}
+
+div.cloudTitle {
+	font-weight: Bold; font-size: 24px;
+}
+
+
+[id^='section-'] a {
+	line-height: 30px !important;
+
+	/* Firefox */
+	display: -moz-box !important;
+	-moz-box-align:center !important;
+
+	/* Safari, Opera, and Chrome */
+	display: -webkit-box !important;
+	-webkit-box-align:center !important;
+
+	/* W3C */
+	display: box !important;
+	box-align:center !important;
+}
+
+
+/*
+
+div.typing {
+	height: 30px; width: 30px; background-size: 20px 20px; background-position: left; background-repeat: no-repeat; background-image: url("../images/typing.gif");
+}
+
+div.origin {
+	text-align: left; margin-top: 10px; font-weight: bold;
+}
+
+div.container {
+	height: auto; overflow: hidden; margin-top: 2px;
+}
+
+div.message  {
+	width: auto; overflow: hidden; text-align: left; word-wrap: break-word; word-break: break-word; white-space: normal; 
+}
+
+div.time {
+	float: right; text-align: right; padding-left: 6px;
+}
+
+div.chatInputMessageContainer {
+	height: 100%; margin-left: 10px; overflow: hidden; border-radius: 6px; background-color: rgb(255, 255, 255); -webkit-box-shadow: inset -2px 5px 7px 1px rgba(13, 13, 13, 0.6);  
+}
+
+
+
+textarea.chatInputMessage, textarea.chatInputMessage:hover, textarea.chatInputMessage:active, textarea.chatInputMessage:focus {
+	height: 100%; 
+}
+
+div.chatMessages {
+	height: 100%; font-size: 12px; overflow-x: hidden; overflow-y: auto; background-color: rgb(255, 255, 255);
+}
+
+div.option {
+	float: right;
+}
+*/

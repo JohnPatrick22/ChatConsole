@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Five9 Chat Sample</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="ChatConsole/css/images/five9.ico">
+
+    <script src="Common/scripts/_lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        function launchChatWindow() {
+            var tenant = $('#f9domain').val();
+            var profiles = $('#f9campaign').val();
+
+            window.open('ChatConsole/chat.html?tenant=' + tenant + '&profiles=' + profiles + '&sessionId=',
+                'five9_chat',
+                'left=50,top=50,width=320,height=500,location=no,menubar=no,resizable=no,scrollbars=no,status=no,titlebar=no,toolbar=no');
+        }
+
+        function clickedChat() {
+            var tenant = $('#f9domain').val();
+            var profiles = $('#f9campaign').val();
+            var chatbox = $('#five9_chat_box');
+            var chatnow = $('#chatNow');
+
+            if (chatbox.html().length > 0) {
+                // hide
+                chatnow.val('Chat Now');
+                chatbox.animate({height: "0px"});
+                chatbox.html('');
+            } else {
+                // show
+                chatnow.val('Click to Hide');
+                chatbox.animate({height: "500px"});
+                chatbox.html('<iframe src="ChatConsole/chat.html?tenant=' + tenant + '&profiles=' + profiles + '&sessionId=" height="500px" width="320px"></iframe>');
+            }
+        }
+
+        function validateFields() {
+            var valid = $('#f9domain').val().length && $('#f9campaign').val().length;
+            $('#launchChat').attr('disabled', !valid);
+            $('#chatNow').attr('disabled', !valid);
+        }
+
+        $(document).ready(function() {
+            $('#launchChat').attr('disabled', true);
+            $('#chatNow').attr('disabled', true);
+        });
+    </script>
+</head>
+<body>
+<div class='container'>
+    <div class="row-fluid">
+        <div class="col-lg-12">
+            <div class="pull-right">
+                <img src="Common/images/Logo.png" width="80px">
+            </div>
+            <h1>Five9 Chat Sample</h1>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row-fluid">
+                        <div class="col-lg-12">
+                            <p>Enter Five9 Domain name and Inbound Campaign to test chat functionality.
+                                (For production these should be supplied in page scripting.)</p>
+
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="f9domain">Five9 Domain</label>
+                                    <input type="text" id="f9domain" class="form-control"
+                                       placeholder="Enter Five9 domain name..." onkeyup="validateFields();">
+                                </div>
+                                <div class="form-group">
+                                    <label for="f9campaign">Five9 Inbound Campaign</label>
+                                    <input type="text" id="f9campaign" class="form-control"
+                                       placeholder="Enter inbound campaign name..." onkeyup="validateFields();">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="col-lg-12">
+                            <!-- Add an id called checkVIVR -->
+                            <input class="btn btn-large btn-primary" type="button" id="launchChat"
+                               value="Launch Chat Window" onclick="launchChatWindow();">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="five9_chat_window">
+    <input class="btn btn-block btn-large btn-primary" type="button" id="chatNow"
+       value="Chat Now" onClick="clickedChat();">
+    <div id="five9_chat_box"></div>
+</div>
+</body>
+</html>

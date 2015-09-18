@@ -1,0 +1,80 @@
+select::-ms-expand {
+    display: none;
+}
+
+select { 
+	cursor: pointer;
+	height: 20px; 
+	width: 100%;
+	border: none;
+	box-shadow: none;
+	
+	background-color: transparent;
+	background-position: center right; 
+	background-repeat: no-repeat; 
+	background-image: url("../images/select/selectDown.png");
+	 
+	font-size: 14px;
+	font-family: Calibri;
+	color: rgb(50,54,43);
+	  
+	outline: 0; 
+	margin: 0;
+	 
+	overflow: hidden;
+	 
+	text-align: left; 
+    text-indent: 0.01px;
+	text-overflow: ellipsis;
+
+	white-space: nowrap; 
+	padding: 0px; 
+	
+    -moz-appearance: none;
+	-webkit-appearance: button; 
+}
+
+select option {
+    color: rgb(242, 242, 242); background-color: rgb(80, 86, 89);    
+}
+
+select option select {
+    background-color: rgb(113, 124, 136);    
+}
+
+
+select[multiple] {
+    height: auto;
+    
+	background-image: none;
+}
+
+
+select.time {
+    cursor: pointer;
+    
+    height: 20px; 
+	/* width: 35px; */
+	width: auto;
+    
+    border: none;
+    
+    -moz-appearance: none;
+	-webkit-appearance: none;
+	 
+    background-color: transparent;
+    background-image: none; 
+	box-shadow: none;
+	
+	color: rgb(191, 191, 191);
+	font-size: 14px;  
+	text-overflow: "";
+    text-align: center; 
+	
+    outline: 0; 
+    margin: 0; 
+    margin-top: 6px;
+     
+	overflow: hidden; 
+    white-space: nowrap; 
+}

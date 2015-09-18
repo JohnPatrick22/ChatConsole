@@ -1,0 +1,192 @@
+button {
+    cursor: pointer; border: none; outline: none; border-style: none; background-color: transparent; background-position: center; background-repeat: no-repeat; font-family: Calibri;
+}
+
+button.buttonImage {
+	background-size: 32px 32px; background-repeat: no-repeat; background-position: center top; background-color: transparent; font-size: 0px;
+}
+
+button.buttonImageWithText {
+	font-size: 16px; min-width: 40px; color: rgb(94, 105, 117); padding-top: 32px; background-size: 32px 32px; background-repeat: no-repeat; background-position: center top; background-color: transparent; 
+}
+button.buttonImageWithText:hover {
+	color: rgb(68, 72, 77);
+}
+button.buttonImageWithText:active {
+	color: rgb(0, 0, 0);
+}
+
+
+button.buttonHelp { 
+    cursor: pointer; padding-top: 32px; font-size: 16px; color: rgb(80, 86,89);  
+}
+button.buttonHelp:hover {
+    color: rgb(113, 124, 136);
+}
+button.buttonHelp:active {
+    color: rgb(255, 255, 255);
+}
+
+
+
+button.buttonLogout {
+    background-image: url("../images/buttons/buttonLogout.png");
+}
+button.buttonLogout:hover {
+    background-image: url("../images/buttons/buttonLogoutHover.png");
+}
+button.buttonLogout:active {
+    background-image: url("../images/buttons/buttonLogoutActive.png");
+}
+
+
+button.buttonLogin {
+	min-width: 47px; padding-top: 47px; background-size: 47px 47px; background-image: url("../images/buttons/buttonLogin.png");
+}
+button.buttonLogin:hover {
+    background-image: url("../images/buttons/buttonLoginHover.png");
+}
+button.buttonLogin:active {
+    background-image: url("../images/buttons/buttonLoginActive.png");
+}
+
+
+button.buttonHome {
+	width: 32px; height: 25px; background-size: 32px 25px; background-image: url("../images/buttons/buttonHome.png");
+}
+button.buttonHome:hover {
+    background-image: url("../images/buttons/buttonHomeHover.png");
+}
+button.buttonHome:active {
+    background-image: url("../images/buttons/buttonHomeActive.png");
+}
+
+
+div.selectFile  {
+	cursor: pointer; border-radius: 1em; height: 22px; color: rgb(80, 86, 89); background: -webkit-linear-gradient(top, rgb(236, 241, 244), rgb(113, 124, 136)); font-size: 14px; text-align: center;
+}
+
+
+button.rounded {
+    border-radius: 1em;
+}
+
+button.buttonWithText { 
+	cursor: pointer;
+	 
+	height: 22px;
+	 
+	padding-left: 8px; 
+	padding-right: 8px; 
+	
+	font-size: 14px;
+	color: rgb(80, 86,89); 
+	
+	background: rgb(163, 174, 196);
+	background: -webkit-linear-gradient(top, rgb(236, 241, 244) 0%, rgb(113, 124, 136) 100%);
+    background: -moz-linear-gradient(top, rgb(236, 241, 244) 0%, rgb(113, 124, 136) 100%); 
+    background: -o-linear-gradient(top, rgb(236, 241, 244) 0%, rgb(113, 124, 136) 100%); 
+    background: -ms-linear-gradient(top, rgb(236, 241, 244) 0%, rgb(113, 124, 136) 100%); 
+	background: linear-gradient(top, rgb(236, 241, 244) 0%, rgb(113, 124, 136) 100%);
+}
+
+button.buttonWithText:hover {
+    color: rgb(113, 124, 136);
+}
+button.buttonWithText:active, button.pressed {
+    color: rgb(255, 255, 255); 
+    background: rgb(113, 124, 136);
+}
+
+
+button.buttonWithTextSmall { 
+	cursor: pointer; height: 18px; padding-left: 6px; padding-right: 6px; color: rgb(80, 86,89); background: -webkit-linear-gradient(top, rgb(236, 241, 244), rgb(113, 124, 136)); font-size: 12px;
+}
+button.buttonWithTextSmall:hover {
+    color: rgb(113, 124, 136);
+}
+button.buttonWithTextSmall:active, button.pressed {
+    color: rgb(255, 255, 255); 
+    background: rgb(113, 124, 136);
+}
+
+
+button.all {
+	width: 50px; height: 18px; float: right; font-size: 12px; margin-right: 8px; 
+}
+button.none {
+	width: 50px; height: 18px; float: right; font-size: 12px;
+}
+button.add {
+	float: left; width:70px; margin-right: 40px;	
+}
+button.save {
+	float: left; width:70px; margin-right: 20px;	
+}
+button.cancel {
+	float: left; width:70px; margin-right: 40px; color: rgb(128, 0, 0);	
+}
+button.delete {
+	float: right; width:70px; color: rgb(128, 0, 0);
+}
+button.upload {
+	width: 70px; height: 30px;
+}
+
+button.roundedRight { 
+    border-top-right-radius: 1em 1em; border-bottom-right-radius: 1em 1em;
+}
+
+button.radioButton { 
+    float: left; width: 30px; height: 30px; border-radius: 15px; -webkit-box-shadow: inset 0 0 5px 1px rgb(80, 86,89);
+}
+button.radioButton:hover {
+    background: rgb(173, 184, 196);
+}
+button.radioButton:active {
+    background: rgb(113, 124, 136);
+}
+button.radioButtonSelected {
+    background: rgb(113, 124, 136);
+}
+button.radioButtonSelected:hover {
+    background: rgb(113, 124, 136);
+}
+
+
+button.headerButton {
+    float: left; padding-top: 34px; padding-left: 4px; padding-right: 4px;
+}
+
+
+div.buttonWithTextOnly {
+    cursor: pointer; color: rgb(94, 105, 117); background-repeat: no-repeat;
+}
+div.buttonWithTextOnly:hover {
+    color: rgb(80, 86,89);
+}
+div.buttonWithTextOnly:active {
+    color: rgb(50, 54, 56);   
+}
+
+
+button.buttonPrinter {
+    background-image: url("../images/buttons/buttonPrinter.png");
+}
+button.buttonPrinter:hover {
+    background-image: url("../images/buttons/buttonPrinterHover.png");
+}
+button.buttonPrinter:active {
+    background-image: url("../images/buttons/buttonPrinterActive.png");
+}
+
+
+button.buttonTerminateChat  {
+	padding-left: 6px; padding-right: 6px; 
+}
+button.buttonTerminateChat:hover {
+    color: rgb(50, 54, 56); 
+}
+button.buttonTerminateChat:active { 
+    color: rgb(242, 242, 242); background: rgb(113, 124, 136); -webkit-box-shadow: inset 0 0 2px 1px rgb(80, 86, 89);
+}

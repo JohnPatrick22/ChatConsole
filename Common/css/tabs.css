@@ -1,0 +1,70 @@
+ul.tabView { 
+	width: 100%; 		
+}
+
+ul.tabView li { 
+	display: block; 	
+}
+
+ul.tabOption 	{ 
+	width: 100%; height: 100%; 
+}
+
+ul.tabOption li { 
+	display: block;
+}
+
+.tabOptionContent { }
+
+.tab { 
+    cursor: pointer; 
+    display:block; 
+    height: 22px; 
+    padding-right: 14px; 
+    padding-left: 14px; 
+    padding-top: 2px; 
+    text-align: center; 
+    color: rgb(242, 242, 242); 
+    
+    background: -webkit-linear-gradient(top, rgb(236, 241, 244) 0%, rgb(37, 64, 97) 100%);
+    background: -moz-linear-gradient(top, rgb(236, 241, 244) 0%, rgb(37, 64, 97) 100%); 
+    background: -o-linear-gradient(top, rgb(236, 241, 244) 0%, rgb(37, 64, 97) 100%); 
+    background: -ms-linear-gradient(top, rgb(236, 241, 244) 0%, rgb(37, 64, 97) 100%); 
+	background: linear-gradient(top, rgb(236, 241, 244) 0%, rgb(37, 64, 97) 100%);
+}
+
+.tab:hover {
+    color: rgb(50, 54, 56); 
+}
+
+.tabSelected { 
+    color: rgb(242, 242, 242); background: rgb(37, 64, 97); -webkit-box-shadow: inset 0 0 2px 1px rgb(80, 86, 89);
+}
+
+.tabSelected:hover { 
+    color: rgb(204, 204, 204); 
+}
+
+.tabLeft {
+    border-radius: 1em 0em 0em 1em;    
+}
+
+.tabCenter {
+	 border-radius: 0em 0em 0em 0em;  
+}
+
+.tabMain {
+	 border-radius: 0em 0em 0em 0em;  
+} 
+
+.tabRight {
+     border-radius: 0em 1em 1em 0em;    
+}
+
+.tabRounded {
+     border-radius: 1em;    
+}
+
+.tabViewContent { 
+	width: 100%; height: 100%;
+}

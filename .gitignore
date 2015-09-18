@@ -1,0 +1,17 @@
+# WS project
+/.idea/
+
+# other SCC folders
+/AdminConsole/
+/AgentConsole/
+/EmailConsole/
+/Executive/
+/ReportConsole/
+/RightNow/
+/Common/login.html
+/ChatConsole/index.jsp
+/ChatConsole/ChatTest.html
+/ChatConsole/ChatDemo.html
+/SurveyConsole/index.jsp
+/SurveyConsole/SurveyTest.html
+/SurveyConsole/SurveyDemo.html

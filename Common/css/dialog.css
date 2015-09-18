@@ -1,0 +1,47 @@
+div.dialogMessageContainer {
+	width: 100%; height: 100%; font-size: 14px; float: left; background-position: left center; background-repeat: no-repeat; background-size: 40px 40px;
+}
+
+.ui-dialog-title {
+	font-size: 16px !important;
+}
+
+span.dialogMessage {
+	height: 100%; margin-left: 50px; text-align: left; white-space: initial;  display: -webkit-box; -webkit-box-align: center;
+}
+
+div.error {
+	background-image: url("../images/dialog/error.png"); 
+}
+
+div.success {
+	background-image: url("../images/dialog/success.png"); 
+}
+
+div.warning {
+	background-image: url("../images/dialog/warning.png"); 
+}
+
+div.information {
+	background-image: url("../images/dialog/information.png"); 
+}
+
+div.question {
+	background-image: url("../images/dialog/question.png"); 
+}
+
+
+div.waiting {
+	background-image: url("../images/waiting/waiting.gif"); 
+}
+
+
+/* div.dialogLoadingContainer {
+	width: 100%; 
+	height: 100%; 
+	background-image: url("../images/waiting/waiting.gif"); 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: 75px 75px;
+}
+ */

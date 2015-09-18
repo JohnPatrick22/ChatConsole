@@ -1,0 +1,26 @@
+
+div.popup {
+	position: relative; 
+	display: none;
+	 
+/*     
+	background: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.50), rgba(242, 242, 242, 0.50) 100%), 
+    			url("../images/popup/popupBackground.png") 0 0 no-repeat;  
+ */	
+	background: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.50), rgba(242, 242, 242, 0.50)),
+				url("../images/popup/popupBackground.png");
+	background-position: center;
+	background-repeat: no-repeat;
+
+border-color: red;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+}
+
+div.popup300x500 {
+	width: 300px; 
+	height: 500px;
+	
+	background-size: 200px 400px;
+}

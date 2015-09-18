@@ -1,0 +1,182 @@
+* { 
+    margin: 0px; padding: 0px;
+}
+
+body { 
+    height: 100%; cursor:default; background-color : rgb(255, 255, 255); overflow: hidden;
+}
+
+div.table {
+    display: table; width: 100%; height: 100%;
+}
+
+div.row {
+    display: table-row; width: 100%; 
+}
+
+div.cell {
+    display: table-cell; width: 100%; vertical-align: middle;
+}
+
+#inputContainer > div { 
+	border-radius: 0.3em !important; border-color: rgb(150, 150, 150) !important; margin-top: 0px; margin-bottom : 20px;
+}
+
+#inputContainer > label {
+	margin-bottom : 0px;
+}
+
+#inputContainer > textarea {
+	margin-top : 0px;
+}
+
+div.loadingImage {
+	width: 100%; height: 150px; background-image: url("../images/waiting/waiting.gif"); background-position: center; background-repeat: no-repeat; background-size: 150px 150px;
+}
+
+/* iPhone [portrait + landscape] */
+@media screen and (max-device-width: 480px) {
+	div.vivrConsole {
+		height: 100% !important; width: 100% !important;
+	}
+}
+
+/* Other Screen Resolution */
+@media only screen and (min-device-width: 768px) {
+	body { 
+    	height: 500px; width: 400px; 
+	}
+}
+
+.error {
+	color: rgb(197, 15, 60);
+}
+
+div.happy {
+	background-image: url("../images/faces/happy.png"); opacity: 0.2;
+}
+.selected div.happy {
+	opacity: 1;
+} 
+
+div.good {
+	background-image: url("../images/faces/good.png"); opacity: 0.2;
+}
+.selected div.good {
+	opacity: 1;
+} 
+
+div.neutral {
+	background-image: url("../images/faces/neutral.png"); opacity: 0.2;
+}
+.selected div.neutral {
+	opacity: 1;
+} 
+
+div.sad {
+	background-image: url("../images/faces/sad.png"); opacity: 0.2;
+}
+.selected div.sad {
+	opacity: 1;
+} 
+
+div.angry {
+	background-image: url("../images/faces/angry.png"); opacity: 0.2;
+}
+.selected div.angry {
+	opacity: 1;
+} 
+
+[sentiment-click].selected div.star {
+	background-image: url("../images/stars/star.png");
+}
+
+[sentiment-click] div.star {
+	background-image: url("../images/stars/no-star.png");
+}
+
+[sentiment-click]  {
+	cursor: pointer;
+}
+
+[sentiment-click] label.sentiment {
+	text-align: center;
+	cursor: pointer;
+}
+
+[sentiment-click] div.sentimentContainer {
+	height: 50px; 
+	padding-bottom: 6px;
+}
+
+[sentiment-click] div.sentiment {
+	width: 50px; height: 50px; margin: 0 auto; border: none; background-size: 50px 50px; background-position: center; background-repeat:no-repeat;
+}
+
+[sentiment-click].selected label.sentiment {
+	font-weight: bold; /*cursor: default; */
+}
+
+[sentiment-click="dot"] div.sentimentContainer {
+	height: 20px;
+}
+
+[sentiment-click="dot"] div.sentimentContainerDot {
+	position: relative; margin: 0 auto; padding-top: 10px; 
+}
+
+[sentiment-click="dot"] div.sentimentContainerDot div.line {
+	position: absolute; width: 100%; top: 12px; border-bottom-style: solid; border-bottom-width: 1px; border-color: rgb(155, 162, 167); 
+}
+
+
+[sentiment-click="dot"] div.dot {
+	position: absolute; left: 40%; width: 4px; height: 4px; border-color: rgb(91, 103, 113); border-style: solid; border-width: 1px; border-radius: 1em; background-color: rgb(91, 103, 113); z-index: 2; 
+}
+
+[sentiment-click="dot"] label.red {
+	color: rgb(197, 29, 59) !important;
+}
+
+[sentiment-click="dot"] label.orange {
+	color: rgb(225, 125, 1) !important;
+}
+
+[sentiment-click="dot"] label.gray {
+	color: rgb(124, 134, 140) !important;
+}
+
+[sentiment-click="dot"] label.lime {
+	color: rgb(107, 166, 58) !important;
+}
+
+[sentiment-click="dot"] label.green {
+	color: rgb(20, 111, 67) !important;
+}
+
+[sentiment-click="dot"].selected div.sentimentContainerDot {
+	padding-top: 0px;
+}
+
+[sentiment-click="dot"].selected div.dot {
+	width: 16px; height: 16px; border-color: rgb(255, 255, 255); border-style: solid; border-width: 3px; border-radius: 1em;
+    -webkit-box-shadow: 0px 2px 0px 0px rgb(194, 194, 194);
+    -moz-box-shadow: 0px 2px 0px 0px rgb(194, 194, 194);
+    box-shadow: 0px 2px 0px 0px rgb(194, 194, 194);
+}
+[sentiment-click="dot"].selected div.dot-red {
+	background-color: rgb(197, 29, 59);
+}
+[sentiment-click="dot"].selected div.dot-orange {
+	background-color: rgb(225, 125, 1);
+}
+[sentiment-click="dot"].selected div.dot-gray {
+	background-color: rgb(208, 211, 212);
+}
+[sentiment-click="dot"].selected div.dot-lime {
+	background-color: rgb(107, 166, 58);
+}
+[sentiment-click="dot"].selected div.dot-green {
+	background-color: rgb(20, 111, 67);
+}
+
